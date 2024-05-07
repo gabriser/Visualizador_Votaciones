@@ -1,5 +1,5 @@
 # java_votacionesDb4o
-App de mostrar resultados de votación a partir de un fichero CSV y base de datos DB4O utilizando patrón MVC
+App de mostrar resultados de votación a partir de un fichero CSV y base de datos DB4O utilizando patrón MVC y Singleton
 
 ![Votaciones Logo](README_img/Votacions_logo.png)
 
@@ -29,7 +29,7 @@ Los objetos generados se guardan en un [fichero DB4O embedded](src/bbdd/myBbdd.d
 
 Los objetos son leidos desde la base de datos DB40 y se guardan en colecciones LinkedHashSet para evitar mostrar datos duplicados.
 
-La aplicación implementa el patrón MVC (Modelo, Vista y Controlador) y las llamadas de la base de datos las administra el modelo [ResultatModel](src/model/ResultatModel.java).
+La aplicación implementa el patrón MVC (Modelo, Vista y Controlador) y las llamadas de la base de datos las administra el modelo [ResultatModel](src/model/ResultatModel.java) que implementa patrón Singleton.
 
 ## Funcionamiento
 
